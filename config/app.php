@@ -162,6 +162,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+        Caffeinated\Menus\MenusServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -225,7 +229,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Menu' => Caffeinated\Menus\Facades\Menu::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
